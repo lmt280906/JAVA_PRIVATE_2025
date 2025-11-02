@@ -1,4 +1,4 @@
-package Java_Private.Buoi2;
+package Java_Private.Lesson2;
 
 public class Utils {
     public static int tong(int a[]) {

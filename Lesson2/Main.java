@@ -1,8 +1,6 @@
-package Java_Private.Buoi2;
+package Java_Private.Lesson2;
 
 import java.util.Scanner;
-
-
 public class Main {
     public static void main(String[] args) {
         int a[] = {2, 15, 6, 4, 13, 11, 16, 7, 3, 5, 17};

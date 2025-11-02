@@ -1,4 +1,4 @@
-package Java_Private.Buoi1;
+package Java_Private.Lesson1;
 
 import java.util.Scanner;
 
