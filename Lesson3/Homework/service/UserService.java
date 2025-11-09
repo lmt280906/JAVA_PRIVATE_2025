@@ -29,5 +29,8 @@ public class UserService {
             System.out.println("Không có người dùng nào trong hệ thống.");
             return;
         }
+        for (int i = 0; i < AuthService.count; i++) {
+            System.out.println(users[i]);
+        }
     }
 }

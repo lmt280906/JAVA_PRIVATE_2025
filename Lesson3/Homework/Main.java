@@ -5,6 +5,8 @@ import Java_Private.Lesson3.Homework.service.UserService;
 
 import java.util.Scanner;
 
+import static Java_Private.Lesson3.Homework.service.AuthService.users;
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
