@@ -32,16 +32,17 @@ public class Main {
         IEmployeeServiceImpl employeeService = new IEmployeeServiceImpl() ;
 
         int choice;
-        System.out.println("Nhap lua chon cua ban ");
-        choice=sc.nextInt();
         do{
             menu();
+            System.out.println("Nhap lua chon cua ban ");
+            choice=sc.nextInt();
+            sc.nextLine();
             switch (choice){
                 case 1 :
                     hienThi();
                     break;
                  case 2:
-                     System.out.println("Tim nhan vien co id ban muon");
+                     System.out.println("Tim nhan vien co id ban muon : ");
                      String id=sc.nextLine();
                      employeeService.getEmployeeById(id);
                      break;
@@ -56,7 +57,6 @@ public class Main {
                     System.out.println("Vui long nhap lai yeu cau cua ban");
                     break;
         }
-
     }while(choice !=4);
     }
 }
