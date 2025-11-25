@@ -41,12 +41,14 @@ public class Main {
                     hienThi();
                     break;
                  case 2:
-                     System.out.println("Tim nhan vien co id la 125");
-                     employeeService.getEmployeeById("125");
+                     System.out.println("Tim nhan vien co id ban muon");
+                     String id=sc.nextLine();
+                     employeeService.getEmployeeById(id);
                      break;
                 case 3:
-                    System.out.println("Tim nmhan vien co ten la Hung");
-                    employeeService.getEmployeeByName("Hung");
+                    System.out.println("Tim nhan vien co ten ban muon");
+                    String ten =sc.nextLine();
+                    employeeService.getEmployeeByName(ten);
                 case 4:
                     System.out.println("Chuonng trinh thoat");
                     break;
