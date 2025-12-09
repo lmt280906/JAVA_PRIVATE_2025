@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import Java_Private.Lesson6.Device;
+import Java_Private.Lesson6.model.Developer;
 import Java_Private.Lesson6.model.Employee;
+import Java_Private.Lesson6.model.Tester;
 import Java_Private.Lesson6.service.IEmployeeServiceImpl;
 import Java_Private.Lesson6.service.impl.IEmployeeService;
 
@@ -26,9 +28,12 @@ public class Main {
     }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
-        getAllEmployees.add(new Employee("123","Hung",23,5000,new Device("111","May tinh")));
-        getAllEmployees.add(new Employee("124","Duc",24,5000,new Device("112","Ban phim")));
-        getAllEmployees.add(new Employee("125","Hung",25,5000,new Device("113","Chuot")));
+        getAllEmployees.add(new Developer("123","Hung",23,5000,new Device("111","May tinh"),5));
+        getAllEmployees.add(new Developer("124","Duc",24,5000,new Device("112","Ban phim"),7));
+        getAllEmployees.add(new Tester ("125","Hung",25,5000,new Device("113","Chuot"),2));
+        getAllEmployees.add(new Tester("127","Nam",25,7000,new Device("115","Man hinh"),1));
+        getAllEmployees.add(new Developer("128","Hai",19,7500,new Device("118","Day sac"),10));
+
         IEmployeeServiceImpl employeeService = new IEmployeeServiceImpl() ;
 
         int choice;
